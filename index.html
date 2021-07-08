@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovely Candy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="donut.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <img src="logo.png" alt="">
+
+    <h1>Bem-vindo!</h1>
+
+    <label for="ingredt_soma">Adicione os valores dos ingredientes:</label>
+    <br>
+    <input type="text" name=ingredt_soma id=ingredt_soma>
+    <br>
+    <!--DIVS-->
+    <div id=teste37>
+        <p>valores adicionados</p>
+    </div>
+    <br>
+    <div id=resultsoma>
+        <p>resultado soma</p>
+    </div>
+    <br>
+    <!--DIVS-->
+    <input type="button"value = adicionar onclick="testeinput()" id="somarvalores"> 
+    <!--Botão de  somar valor, id: somavalores-->
+    <input type="button"value = remover onclick="retirar_valor()" id="subtrairvalores">
+    <!--Botão de subtrair valor, id: subtrairvalores-->
+
+
+    <br>
+    <label for="taxa1">Taxa de embalagem (em %)</label> 
+    <br>
+    <input type="text" name=taxa1 id=taxa1> <br>
+    <label for="taxa2">Taxa de mão de obra (em %)</label> 
+    <br>
+    <input type="text" name=taxa2 id=taxa2> <br>
+    <label for="taxa3">Taxa de gastos adicionais (em %)</label> 
+    <br>
+    <input type="text" name=taxa3 id=taxa3> 
+    <br>
+    <div name = calculartaxa id = calculartaxa>
+        <p>calculo da taxa</p>
+    </div>
+    <br>
+    <input type="button"value = "adicionar taxa" onclick="taxavalor()" id="calculartaxas"> <br>
+    <!--Botão de calcular as taxas, id: calculartaxas-->
+
+    <br>
+     
+    
+    <label for="lucrotaxa">Taxa de lucro (em %)</label>
+    <br>
+    <input type="text" name=lucrotaxa id=lucrotaxa>
+    <br>
+    <div id = valor_final>
+        <p>porcentagem de lucro</p>
+    </div>
+    <br>
+    <input type="button"value = 'calcular lucro' onclick="lucro()" id="lucro_final">
+    <br>
+
+    <!--Botão de calcular o lucro, id: lucro_final-->
+    <br>
+    <label for="rendimento">Rendimento</label>
+    <br>
+    <input type="number" name=rendimento id=rendimento> 
+    <br>
+    <div id=rendiment>
+        <p>rendimento</p>
+    </div>
+    <br>
+    <input type="button"value = 'calcular rendimento' onclick="calcrendimento()" id="rendimento"> 
+    <br>
+    <!--Botão de dividir o lucro pelo rendimento, id: rendimento-->
+    <h2>Como funciona?</h2>
+        <p id="caixa">Esta é uma calculadora criada para confeiteiros ou qualquer empreendedor que deseje precificar suas criações de forma justa e coerente.
+            <br>
+            <br>
+            1.O primeiro campo serve para adicionar o valor de cada ingrediente utilizado na receita, sendo possível também remover um valor da lista caso deseje.
+            <br>
+            <br>
+            2.Os próximos campos são para calcular a taxa que será aplicada sobre o valor obtido anteriormente, na soma dos ingredientes.
+            <br>
+            <br>
+                a.O primeiro campo se refere ao gasto com embalagens. O usuário decide quantos porcento deseja aplicar sobre a soma de ingredientes, e esse valor será acrescentado ao valor anterior
+                <br>
+                b.O segundo campo se refere a quantos porcento se deseja aplicar sobre o seu tempo, trabalho e experiência. É importante levar em conta a complexidade da receita, o tempo gasto e investimentos com especialização e experiência profissional. Novamente, essa taxa será calculada com base no valor dos ingredientes e somada ao mesmo.
+                <br>
+                c.O terceiro campo se refere a taxa de gastos como energia elétrica, manutenção, concerto e compra de equipamentos, gas de cozinha, etc. Uma parte reservada para cobrir essas despesas.
+                <br>
+                <br>
+            3. O campo de lucro serve para aplicar, sobre o valor obtido no cálculo anterior, uma porcentagem de lucro desejada pelo usuário. Relembrando sobre a importancia de valorizar o trabalho e esforço envolvidos, e de aplicar de fato o valor que achar justo.</p>
+</body>
+</html>
